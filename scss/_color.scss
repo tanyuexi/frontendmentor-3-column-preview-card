@@ -1,0 +1,17 @@
+$very-dark-magenta: hsl(300, 43%, 22%);
+$white: hsl(0, 0%, 100%);
+
+$colors: (
+  'very-dark-magenta': $very-dark-magenta,
+  'white': $white
+);
+
+@each $key, $value in $colors {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  .#{$key} {
+    color: $value;
+  }
+}
