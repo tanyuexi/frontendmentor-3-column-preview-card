@@ -1,4 +1,4 @@
-$content-max-width: 1060px;
+$content-max-width: 900px;
 
 * {
   margin:0;
@@ -7,8 +7,7 @@ $content-max-width: 1060px;
 }
 
 body {
-  padding: 8rem 2rem;
-  position: relative;
+  padding: 6rem 2rem;
 }
 
 img {
@@ -20,13 +19,31 @@ img {
   margin: auto;
 }
 
-@mixin box-bg($color) {
-  border-radius: 0.5rem;
-  background: $color;
+@mixin button-style($selector, $foreground-color, $background-color){
+  #{$selector} {
+    color: $background-color;
+    background: $foreground-color;
+    border: solid 2px $foreground-color;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #{$selector}:hover {
+    color: $foreground-color;
+    background: $background-color;
+  }
 }
 
-@mixin bg-img($top-or-bottom, $left-or-right) {
-  position: absolute;
-  #{$top-or-bottom}: 0;
-  #{$left-or-right}: 0;
-}
+// @mixin box-bg($color) {
+//   border-radius: 0.5rem;
+//   background: $color;
+// }
+//
+// @mixin bg-img($top-or-bottom, $left-or-right) {
+//   position: absolute;
+//   #{$top-or-bottom}: 0;
+//   #{$left-or-right}: 0;
+// }

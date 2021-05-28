@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.flex-container {
+.flex-container-space-between {
   @extend %flex-shared;
   justify-content: space-between;
 }

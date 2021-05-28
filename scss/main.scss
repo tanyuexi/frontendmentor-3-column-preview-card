@@ -2,5 +2,86 @@
 @use 'color';
 @use 'font';
 @use 'flex';
-@use 'align';
 
+
+@mixin card-style($color, $car-type) {
+  background: $color;
+
+  .car-image {
+    background: url("../images/icon-" + $car-type + ".svg") no-repeat left center;
+  }
+
+  @include base.button-style("button.learn-more-button", color.$very-light-gray, $color);
+
+}
+
+body {
+  background: color.$very-light-gray;
+}
+
+.page-wrapper.flex-container-no-space {
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .card__sedan {
+    @include card-style(color.$bright-orange, "sedans");
+  }
+
+  .card__suv {
+    @include card-style(color.$dark-cyan, "suvs");
+  }
+
+  .card__luxury {
+    @include card-style(color.$very-dark-cyan, "luxury");
+  }
+
+  .card {
+    flex: 100%;
+    padding: 3rem;
+    text-align: left;
+
+    .car-image {
+      height: 40px;
+    }
+
+    h1 {
+      color: color.$very-light-gray;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    }
+
+    p {
+      color: color.$transparent-white-paragraphs;
+      margin-top: 2rem;
+    }
+
+    button.learn-more-button {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 10rem 2rem;
+  }
+
+  .page-wrapper.flex-container-no-space {
+    .card {
+      flex: 30%;
+
+      button.learn-more-button {
+        margin-top: 4rem;
+      }
+    }
+  }
+}

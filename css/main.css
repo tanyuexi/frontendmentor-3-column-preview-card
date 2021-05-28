@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 6rem 2rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.page-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.flex-container-space-around, .flex-container-no-space, .flex-container-space-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-container-space-between {
+  justify-content: space-between;
+}
+
+.flex-container-space-around {
+  justify-content: space-around;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.page-wrapper.flex-container-no-space {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.page-wrapper.flex-container-no-space .card__sedan {
+  background: #e38826;
+}
+.page-wrapper.flex-container-no-space .card__sedan .car-image {
+  background: url("../images/icon-sedans.svg") no-repeat left center;
+}
+.page-wrapper.flex-container-no-space .card__sedan button.learn-more-button {
+  color: #e38826;
+  background: #f2f2f2;
+  border: solid 2px #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-wrapper.flex-container-no-space .card__sedan button.learn-more-button:hover {
+  color: #f2f2f2;
+  background: #e38826;
+}
+.page-wrapper.flex-container-no-space .card__suv {
+  background: #006970;
+}
+.page-wrapper.flex-container-no-space .card__suv .car-image {
+  background: url("../images/icon-suvs.svg") no-repeat left center;
+}
+.page-wrapper.flex-container-no-space .card__suv button.learn-more-button {
+  color: #006970;
+  background: #f2f2f2;
+  border: solid 2px #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-wrapper.flex-container-no-space .card__suv button.learn-more-button:hover {
+  color: #f2f2f2;
+  background: #006970;
+}
+.page-wrapper.flex-container-no-space .card__luxury {
+  background: #004241;
+}
+.page-wrapper.flex-container-no-space .card__luxury .car-image {
+  background: url("../images/icon-luxury.svg") no-repeat left center;
+}
+.page-wrapper.flex-container-no-space .card__luxury button.learn-more-button {
+  color: #004241;
+  background: #f2f2f2;
+  border: solid 2px #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-wrapper.flex-container-no-space .card__luxury button.learn-more-button:hover {
+  color: #f2f2f2;
+  background: #004241;
+}
+.page-wrapper.flex-container-no-space .card {
+  flex: 100%;
+  padding: 3rem;
+  text-align: left;
+}
+.page-wrapper.flex-container-no-space .card .car-image {
+  height: 40px;
+}
+.page-wrapper.flex-container-no-space .card h1 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.page-wrapper.flex-container-no-space .card p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 2rem;
+}
+.page-wrapper.flex-container-no-space .card button.learn-more-button {
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 10rem 2rem;
+  }
+
+  .page-wrapper.flex-container-no-space .card {
+    flex: 30%;
+  }
+  .page-wrapper.flex-container-no-space .card button.learn-more-button {
+    margin-top: 4rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

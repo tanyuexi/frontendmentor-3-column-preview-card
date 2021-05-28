@@ -1,17 +1,22 @@
-$very-dark-magenta: hsl(300, 43%, 22%);
-$white: hsl(0, 0%, 100%);
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
 
-$colors: (
-  'very-dark-magenta': $very-dark-magenta,
-  'white': $white
-);
+$transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+// (background, headings, buttons)
+$very-light-gray: hsl(0, 0%, 95%);
 
-@each $key, $value in $colors {
-  .bg-#{$key} {
-    background-color: $value;
-  }
-
-  .#{$key} {
-    color: $value;
-  }
-}
+// $colors: (
+//   'very-dark-magenta': $very-dark-magenta,
+//   'white': $white
+// );
+//
+// @each $key, $value in $colors {
+//   .bg-#{$key} {
+//     background-color: $value;
+//   }
+//
+//   .#{$key} {
+//     color: $value;
+//   }
+// }
